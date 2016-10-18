@@ -7,6 +7,7 @@ public class Main {
 		
 		Scanner kb = new Scanner(System.in);
 		Roll lucky = new Roll();
+        Dmg dmg = new Dmg();
 		
 		System.out.println("Hello what is your name");
 		String name = kb.nextLine();
@@ -19,28 +20,28 @@ public class Main {
 		String wepAns = "";
 		
 		if (fork == 0){
-			System.out.println("select your wepon 's' for sword 'b' for bow ");
+			System.out.println("select your weapon 's' for sword 'b' for bow ");
 			wepAns =  kb.next();
 			
 		}
 		else if (fork == 1){
-			System.out.println("select your wepon 'm' for mace 'w' for wand");
+			System.out.println("select your weapon 'm' for mace 'w' for wand");
 			wepAns = kb.next();
 		}
-        
+
 		char wepChar = wepAns.charAt(0);
 		
 		 switch (wepChar) {
-			 case 1:
+			 case 's':
 				 wepT = 0;
 				 break;
-			 case 2:
+			 case 'b':
 				 wepT = 1;
 				 break;
-			 case 3:
+			 case 'm':
 				 wepT = 2;
 				 break;
-			 case 4:
+			 case 'w':
 				 wepT = 3;
 				 break;
 			 default:
@@ -48,6 +49,10 @@ public class Main {
 		 }
 
 		Adven you = new Adven(name,wepT);
+
+        System.out.println("You start at a market");
+        System.out.println("");
+
 
 
 

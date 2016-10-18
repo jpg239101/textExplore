@@ -8,8 +8,7 @@ public class Dmg {
 
     public Dmg(){
 
-
-
     }
+
 
 }
