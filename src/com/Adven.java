@@ -3,6 +3,7 @@ package com;
 /**
  * Created by jg101 on 10/17/16.
  */
+
 public class Adven {
     public double health = 20.0;
     public String name = "";
@@ -14,7 +15,8 @@ public class Adven {
         wepType = w;
     }
 
-    public double getHealth() {
+    public double Health() {
+
         return health;
     }
 }
